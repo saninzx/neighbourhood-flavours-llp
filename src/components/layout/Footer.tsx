@@ -90,7 +90,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-muted-foreground text-sm">
-                  Corporate Office, Business District,<br />City - 560001
+                  Vengara, Malappuram<br />City - 676304
                 </span>
               </li>
               <li className="flex items-center gap-3">
