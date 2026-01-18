@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Store, Package, Truck, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import heroImage from "@/assets/hero-supermarket-interior.jpg";
 
 const stats = [
   { icon: Store, label: "Retail Stores", value: "5+" },
@@ -13,11 +14,16 @@ const stats = [
 export function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Background Gradient */}
-      <div 
-        className="absolute inset-0 opacity-60"
-        style={{ background: "var(--gradient-hero)" }}
-      />
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src={heroImage} 
+          alt="Modern supermarket interior" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/85" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent" />
+      </div>
       
       {/* Decorative Elements */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
